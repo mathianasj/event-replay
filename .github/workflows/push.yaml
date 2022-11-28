@@ -14,7 +14,7 @@ jobs:
 
     env:
       IMAGE_NAME: event-replay
-      TAGS: ${{ github.ref }} ${{ github.sha }}
+      TAGS: ${{ github.ref_name }} ${{ github.sha }}
 
     steps:
       - name: Checkout
